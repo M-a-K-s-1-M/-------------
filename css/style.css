@@ -10,6 +10,10 @@ body {
     font-size: 16px;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -24,7 +28,8 @@ img {
 }
 
 .container {
-    width: 1400px;
+    width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -94,6 +99,7 @@ header nav ul li.btn a:hover {
     padding-bottom: 100px;
     position: relative;
     z-index: 1;
+    margin-bottom: 50px;
 }
 
 .hero--info {
@@ -136,6 +142,126 @@ header nav ul li.btn a:hover {
 
 .hero img {
     position: absolute;
-    top: -150px;
-    right: 0px;
+    top: -180px;
+    right: -50px;
+}
+
+/* Секция с играми */
+
+.trending {
+    margin-bottom: 129px;
+}
+
+.trending h3 {
+    font-weight: 700;
+    font-size: 31px;
+    margin-bottom: 50px;
+}
+
+.trending .see-all {
+    color: white;
+    background: #25211D;
+    padding: 10px 30px;
+    border-radius: 10px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.trending .see-all:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.trending .games span img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.big-text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+    margin-bottom: 65px;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 30px;
+    margin-bottom: 45px;
+    width: 545px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 155px;
+}
+
+/* Секция с изображением */
+
+.features {
+    background: url('/img/featureBG.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 90px 0;
+}
+
+.features h3,
+.features p.description {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 830px;
+    margin: 0 auto;
+}
+
+.features h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.features p.description {
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img {
+    margin-bottom: 30px;
+}
+
+.features .info .block p {
+    margin-bottom: 24px;
 }
