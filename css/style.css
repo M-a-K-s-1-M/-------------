@@ -84,14 +84,16 @@ header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid #DC7000;
 }
 
-header nav ul li.btn a {
+header nav ul li.btn a,
+.email .block button {
     background: #FA9021;
     padding: 9px 17px;
     border-radius: 6px;
     transition: all 500ms ease;
 }
 
-header nav ul li.btn a:hover {
+header nav ul li.btn a:hover,
+.email .block button:hover {
     background: #743c01;
 }
 
@@ -158,7 +160,8 @@ header nav ul li.btn a:hover {
     margin-bottom: 50px;
 }
 
-.trending .see-all {
+.trending .see-all,
+.projects .see-all {
     color: white;
     background: #25211D;
     padding: 10px 30px;
@@ -168,7 +171,8 @@ header nav ul li.btn a:hover {
     transition: all 500ms ease;
 }
 
-.trending .see-all:hover {
+.trending .see-all:hover,
+.projects .see-all:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -264,4 +268,106 @@ header nav ul li.btn a:hover {
 
 .features .info .block p {
     margin-bottom: 24px;
+}
+
+/* Секция с проектами */
+
+.projects {
+    padding-top: 140px;
+    margin-bottom: 100px;
+}
+
+.projects h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.projects p {
+    margin: 0 auto;
+    width: 500px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.projects .see-all {
+    float: none;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+/* Секция с форомой */
+
+.email {}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.email p {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.email .block {
+    padding: 40px 50px;
+    background: #1C140F;
+    border-radius: 15px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    padding: 20px 30px;
+    position: relative;
+    right: -95px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button {
+    color: white;
+    cursor: pointer;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2;
 }
